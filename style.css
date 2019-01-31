@@ -10,3 +10,11 @@ html, body {
 ul {
     list-style: none;
 }
+.labels {
+    display: inline-block;
+    width: 40%;
+}
+.answers {
+    display: inline-block;
+    width: 48%;
+}
