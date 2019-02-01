@@ -1,3 +1,5 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 html, body {
     min-width: 320px;
     text-align: center;
@@ -11,10 +13,10 @@ h1 {
     font-family: "roboto", sans-serif;
     font-size: 2.2em;
     text-transform: uppercase;
-    color:  #85ffc7;
+    color: #85ffc7;
 }
 
-#form-body { 
+#form-body {
     width: 80%;
     margin: 0 auto;
     border-radius: 5px;
@@ -95,6 +97,75 @@ textarea {
     border-color: #85ffc7;
 }
 
-.clickable { 
+.clickable {
     cursor: pointer;
+}
+
+hr {
+    background-color: #85ffc7;
+    max-width: 50%;
+}
+
+a {
+    color: white;
+}
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+}
+
+.social-icons li {
+    display: inline;
+}
+
+.fa-linkedin {
+    padding: 10px 14px;
+    border-radius: 5px;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.fa-linkedin:hover {
+    background-color: #0073a4;
+    color: white;
+}
+
+.fa-github {
+    padding: 10px 14px;
+    border-radius: 5px;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.fa-github:hover {
+    background-color: black;
+    color: white;
+}
+
+.fa-codepen {
+    padding: 10px 14px;
+    border-radius: 5px;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.fa-codepen:hover {
+    background-color: violet;
+    color: white;
+}
+
+#tag {
+    margin-bottom: 0px;
+    padding: 0px;
+    font-size: .7em;
 }
