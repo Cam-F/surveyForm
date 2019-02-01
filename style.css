@@ -72,7 +72,7 @@ textarea {
     background: transparent;
     border-color: white;
     color: #85ffc7;
-    width: 100%;
+    max-width: 100%;
 }
 
 #submit {
