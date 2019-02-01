@@ -29,7 +29,7 @@
                     <label for="name" id="name-label">* Name:</label>
                 </div>
                 <div class="answers">
-                    <input type="text" name="name" id="name" class="input-field" placeholder="Enter your name">
+                    <input required type="text" name="name" id="name" class="input-field" placeholder="Enter your name">
                 </div>
             </div>
             <!-- email w/ error handling-->
@@ -38,7 +38,7 @@
                     <label for="email" id="email-label">* Email:</label>
                 </div>
                 <div class="answers">
-                    <input type="text" name="email" id="email" class="input-field" placeholder="Enter your Email">
+                    <input required type="email" name="email" id="email" class="input-field" placeholder="Enter your Email">
                 </div>
             </div>
             <!-- number w/ error handling -->
@@ -47,7 +47,8 @@
                     <label for="age" id="number">* Age:</label>
                 </div>
                 <div class="answers">
-                    <input type="number" name="age" id="number" class="input-field" min="1" max="100" placeholder="Age">
+                    <input required type="number" name="age" id="number" class="input-field" min="1" max="100"
+                        placeholder="Age">
                 </div>
             </div>
             <!-- dropdown -->
@@ -57,7 +58,7 @@
                 </div>
                 <div class="answers">
                     <select id="dropdown">
-                        <option disabled value>Select an option</option>
+                        <option disabled selected>Select an option</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -71,10 +72,12 @@
                 </div>
                 <div class="answers">
                     <ul>
-                        <li class="radio"><label>One <input type="radio" name="radio-button" value="1"></label></li>
-                        <li class="radio"><label>Two <input type="radio" name="radio-button" value="2"></label></li>
-                        <li class="radio"><label>Three <input type="radio" name="radio-button" value="3"></label></li>
-                    </ul>
+                        <li class="radio"><label class="clickable"><input type="radio" name="radio-button" value="1"><span class="checkmark"></span>
+                                One</label></li>
+                        <li class="radio"><label class="clickable"><input type="radio" name="radio-button" value="1"><span class="checkmark"></span>
+                                Two</label></li>
+                        <li class="radio"><label class="clickable"><input type="radio" name="radio-button" value="1"><span class="checkmark"></span>
+                                Three</label></li>
                 </div>
             </div>
             <!-- checkboxes -->
@@ -84,10 +87,14 @@
                 </div>
                 <div class="answers">
                     <ul>
-                        <li class="checkbox-answers"><label><input type="checkbox" name="checkbox-button" value="1">One</label></li>
-                        <li class="checkbox-answers"><label><input type="checkbox" name="checkbox-button" value="2">Two</label></li>
-                        <li class="checkbox-answers"><label><input type="checkbox" name="checkbox-button" value="3">Three</label></li>
-                        <li class="checkbox-answers"><label><input type="checkbox" name="checkbox-button" value="4">Four</label></li>
+                        <li class="checkbox-answers"><label class="clickable"><input type="checkbox" name="checkbox-button" value="1">
+                                One</label></li>
+                        <li class="checkbox-answers"><label class="clickable"><input type="checkbox" name="checkbox-button" value="2">
+                                Two</label></li>
+                        <li class="checkbox-answers"><label class="clickable"><input type="checkbox" name="checkbox-button" value="3">
+                                Three</label></li>
+                        <li class="checkbox-answers"><label class="clickable"><input type="checkbox" name="checkbox-button" value="4">
+                                Four</label></li>
                     </ul>
                 </div>
             </div>
@@ -97,11 +104,11 @@
                     <label for="comments">Any comments or suggestions?</label>
                 </div>
                 <div class="answers">
-                    <textarea name="comment" id="comments" cols="30" rows="5" placeholder="Enter your comment here..."></textarea>
+                    <textarea name="comment" id="comments" cols="30" rows="3" placeholder="Enter your comment here..."></textarea>
                 </div>
             </div>
             <!-- submit button -->
-            <button id="submit" type="subtmit">Submit</button>
+            <button id="submit" type="submit">Submit</button>
         </form>
     </div>
 </body>

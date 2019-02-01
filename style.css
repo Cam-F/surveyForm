@@ -1,20 +1,100 @@
 html, body {
     min-width: 320px;
     text-align: center;
+    font-weight: 300;
+    background-color: #37404a;
+    color: #fff;
+    padding: 2%;
 }
+
+h1 {
+    font-family: "roboto", sans-serif;
+    font-size: 2.2em;
+    text-transform: uppercase;
+    color:  #85ffc7;
+}
+
 #form-body { 
-    max-width: 80%;
-    background-color: lightgray;
+    width: 80%;
     margin: 0 auto;
+    border-radius: 5px;
+    max-width: 900px;
+    padding: 10px;
+    padding-top: 20px;
 }
+
 ul {
     list-style: none;
 }
+
 .labels {
     display: inline-block;
     width: 40%;
+    text-align: right;
+    padding: 5px;
+    margin-right: 3%;
 }
+
 .answers {
     display: inline-block;
     width: 48%;
+    text-align: left;
+}
+
+input {
+    font-weight: 300;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: #85ffc7;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+select {
+    font-weight: 300;
+    background: transparent;
+    color: #85ffc7;
+    background-color: #37404a;
+    overflow: hidden;
+}
+
+.radio, .checkbox-answers {
+    position: relative;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: left;
+}
+
+textarea {
+    background: transparent;
+    border-color: white;
+    color: #85ffc7;
+    width: 100%;
+}
+
+#submit {
+    margin-top: 10px;
+    background: transparent;
+    width: 100%;
+    color: #85ffc7;
+    border: 1px solid #85ffc7;
+    box-shadow: 2px 2px 20px 2px #85ffc7;
+    border-radius: 5px;
+    padding: 5px;
+    transition-duration: .9s;
+    max-width: 500px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #85ffc7;
+    color: #37404a;
+    border-color: #85ffc7;
+}
+
+.clickable { 
+    cursor: pointer;
 }
